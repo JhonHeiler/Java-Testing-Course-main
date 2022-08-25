@@ -1,0 +1,39 @@
+PRUEBAS UNITARIAS
+COGE UN COMPONENTE AISLADO Y VERIFICA QUE EL RESULTADO SEA EL ESPERADO
+
+_JUNIT NOS SIRVE PARA HECER LAS PRUEBAS DE CIERTO CODIGO
+_NOSOTROS PODEMOS SABER SIN EFECTOS LOS RESULTADOS GENERADOS POR NUESTRO CODIGO
+ SI SON LOS QUE ESTAMOS ESPERANDO EL USUARIO DE TAL MANERA QUE PODAMOS VERIFICAR 
+ QUE TODO SE ESTA HACIENDO CORRECTAMENTE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DONDE SE HACE LAS PRUEBAS UNITARIAS
+_TRANSACIONES A BASE DE DATOS
+_LOGICA DE NEGOCIO QUE ME PIDE EL USUARIO PARA QUE FUNCIONE EL SISTEMA
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CARPETA TEST
+_SpringBootTest (Verifica que no halla error en la integracion)
+_Corran rapido y sean independiente
+_Seleciono el nombre de la clase y le doy (Alt Enter)=> importacion al paquete test
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+COMO SE COMPONEN LAS PRUEBAS UNITARIAS
+
+_SON CLASES QUE CADA METODO REPRESENTA UNA PRUEBA
+_DOCUMENTACION JUNIT
+_@DisplayName("") =>Descripcion
+_Assertions (CLASE)=>(HACE TODO LO NECESARIO PARA COMPROBA COMPORTAMIENTOS, PREPARAMOS ECENARIO, ACTUAMOS, VERIFICA EL RESULTADO)
+_METODOS PARA RECIBIR UNA EXEPCION => (assertThrows)=> 	Comprobamos que nuestro codigo resibe una exepcion
+_METODOS PARA RECIBIR UNA EXEPCION => (NullpointerExeption)=> Resibe null
+_METODOS PARA RECIBIR UNA EXEPCION => (assertDoesNotThrow)=> Verificar que no resibe una exepcion
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PRUEBA INTEGACION
+COGE VARIOS COMPONENTES VERIFICA EL COMPORTAMIENTO EN CONJUNTO
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PRUEBA ENTUEN 
+PRUEBA INTERFAZ DE USUARIO, SE LEVANTA EL FRONTEND Y EL BACKEND Y LA VERIFICA UN ROBOT
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+_MOQUITO
+_KARATE
+

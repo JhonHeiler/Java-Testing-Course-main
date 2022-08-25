@@ -1,0 +1,58 @@
+Debemos evitar usar variable primitiva en los atributos de una clase
+clase enum =>Elegir opciones
+rest = respetemos la responsabilidad de cada capa
+
+
+PRUEBA UNITARIA
+ Es una forma que nos permite comprobar el correcto funcionamiento de unidad 
+ de nuestro codigo
+
+EXAMPLE: @Test,funcion, variable, Assert.assertEquals($1000.00,variable)=>1.espera2.actual=>comparacion
+nullExepcion
+
+
+Test-Driven Development: - Desarrollo guiado por prueba
+ Hace referencia a la programacion dirigida por prueba
+ hacemos una pequeña prueba con tedidi y luego realizamos el codigo que satiface a la prueba
+
+ -yo soy mas partidario de acomular test por funcionalidad, no necesario hacer un test por un 
+ caso unico
+
+ -Cuando declaramos una funcion con @before lo que esta dentro se ejecuta antes de cualquier test
+
+
+MOCKITO
+
+Es una libreria que nos permite hacer testing en java.
+-Nos permite mokear la funcionalida de una clase
+-Nos permite simular una prueba sin guadar a la base de datos
+-Emula repuesta
+-@RunWitUnitRunner.classJh(Mockito)=> a la clase
+-intaciamos con @InjectMocks => indicamos que va ser la clase principal 
+ para realizar las prueba y crea el objeto dentro de la clase
+-@Mock creamos el objeto que queremos emular las respuesta, solo seria una simulacion, no modificaria
+-final no lo deja moquear clase
+-Para mockear clases final=> resource/carpeta:mockito-extensions/file:org.mockito.plugins.MockMaker/dentro:mock-maker-inline
+-Para obtener lo que se esta imprimiendo en consola =>ByteArrayOutputStream out = ByteArrayOutputStream();
+ System.set => podriamos comparar el texto tostring().container
+1.Codigo heredadOut(new PrintStream(out))
+2.Codigo basura
+
+CUCUMBER
+ Es una capa intermedia entre el testing que nos permite leer de 
+ una manera facil los test, es un ecenario de prueba
+ 1.podria ser la documentacion de testing pero 100% funcional
+ Intalacioncion:plugin:cucumber,gherkin:dependencia io.cucumber
+ 2.entre comilla palabra dinamica
+
+
+TEST DE MUTACION(pitest)
+Podemos observar que prueba nos falta provar, esto nos permite prevenir errores(SONAR DEL LADO DEL SERVIDOR)
+plugin/pitest=> configuracion en dependencia||nombre del proyecto,click derecho=>piest in proyect
+
+SONAR
+ Es una herramienta que nos permite auditar nuestro codigo para saber que tambien
+ programado esta
+ versiones:una para ultilizar dentro de intellij,
+           otra en los servidores||plugin:SONAR => QUE COSA SE PUEDEN MEJORAR
+
